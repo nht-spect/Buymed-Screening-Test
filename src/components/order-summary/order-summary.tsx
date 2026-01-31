@@ -30,7 +30,7 @@ export const OrderSummary = memo(({ prices }: OrderSummaryProps) => {
 
          <Column className='flex-1 gap-1 items-center'>
             <Text className='text-slate-500 text-xs font-semibold uppercase tracking-wide'>
-               Total Qty
+               total qTY{' '}
             </Text>
             <Text className='text-slate-900 text-xl font-bold'>{totalQty}</Text>
          </Column>
