@@ -22,7 +22,6 @@ export const CategoryFilter = ({ onFilter }: Props) => {
       <FlashList
          horizontal
          data={data}
-         pagingEnabled
          renderItem={renderItem}
          contentContainerStyle={{
             paddingTop: 20,

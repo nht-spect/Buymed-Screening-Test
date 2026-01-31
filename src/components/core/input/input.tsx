@@ -7,6 +7,8 @@ import { Show } from '../show';
 import { BaseInputProps } from '@/types';
 import { inputStyle } from './input.styles';
 import { useInputFocus } from '@/hooks/use-input-focus';
+import { cn } from '@/utils';
+import { IS_IOS } from '@/lib/constants';
 
 const StyledTextInput = withUniwind(TextInput);
 
@@ -30,7 +32,7 @@ export const Input = (props: BaseInputProps) => {
             {...otherProps}
             onBlur={handleBlur}
             onFocus={handleFocus}
-            className={styles.input()}
+            className={cn(`${IS_IOS ? 'leading-0' : 'leading'}`, styles.input())}
             placeholderTextColorClassName='accent-slate-400'
          />
 
