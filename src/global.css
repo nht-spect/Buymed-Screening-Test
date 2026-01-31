@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+@import 'uniwind';
+
+@import 'tailwindcss';
+@import 'uniwind';
+
+@theme {
+    /* Spacing */
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-default: 14px;
+
+    /* Border Radius */
+    --radius-default: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-full: 9999px;
+}
+
+@layer theme {
+    :root {
+        @variant light {
+            --color-primary: #2563EB;
+            --color-background: #F8FAFC;
+        }
+
+        @variant dark {
+            --color-primary: #2563EB;
+            --color-background: #101922;
+        }
+    }
+}
+
+@layer utilities {
+    .p-default {
+        @apply p-6;
+    }
+}

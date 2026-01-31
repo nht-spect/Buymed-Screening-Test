@@ -2,6 +2,7 @@
   "expo": {
     "name": "quick-order-mobile-app",
     "slug": "quick-order-mobile-app",
+    "scheme": "quick-order-mobile-scheme",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +14,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hoangthinh.quick-order-mobile-app"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +23,20 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.hoangthinh.quickordermobileapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3df453d1-4922-4a3f-8f78-a9554d931f53"
+      }
+    },
+    "owner": "hoangthinh",
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
